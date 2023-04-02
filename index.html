@@ -7,126 +7,197 @@
   </head>
   <body>
     <header class="page-header">
+      <a class="header-logo-link" href="#">
+        <img src="images/svg/logo.svg" width="145" height="36" alt="Логотип Девайс">
+      </a>
       <nav class="navigation">
-        <a class="header-logo-link" href="#">
-          <img src="images/svg/logo.svg" width="145" height="36" alt="Логотип Девайс">
-        </a>
-        <ul class="navigation-list-main">
-          <li>
-            <form class="navigation-form">
-              <input class="navigation-search" type="text" placeholder="Поиск по сайту">
+        <div class="navigation-container">
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <label class="navigation-form">
+              <span class="visually-hidden">Поискавое поле</span>
+              <input class="navigation-search" type="text" placeholder="Поиск по сайту" name="text">
               <button class="navigation-form-button" type="submit">
                 <span class="navigation-text-button">Найти</span>
               </button>
-            </form>
-          </li>
-          <li>
-            <a class="navigation-entrance-link" href="#">Войти</a>
-          </li>
-          <li>
-            <a class="navigation-compare-link" href="#">Сравнить</a>
-          </li>
-          <li>
-            <a class="navigation-basket-link" href="#">Корзина</a>
-            <span class="navigation-basket-text"></span>
-          </li>
-        </ul>
-        <ul class="navigation-list-index-catalog">
-          <li class="navigation-item-index-catalog">
-            <a class="navigation-link-index-catalog product-catalog" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="navigation-item-index-catalog">
-            <a class="navigation-link-index-catalog" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-item-index-catalog">
-            <a class="navigation-link-index-catalog" href="#contacts">Контакты</a>
-          </li>
-        </ul>
+            </label>
+          </form>
+          <a class="navigation-entrance-link" href="#">Войти</a>
+          <ul class="navigation-list-index">
+            <li>
+              <a class="navigation-compare-link" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-basket-itam">
+              <a class="navigation-basket-link" href="#">Корзина</a>
+              <div class="navigation-basket-itam">
+                <div class="container-popover">
+                  <ul class="popover-list">
+                    <li class="popover-itam">
+                      <div class="container-amateur">
+                        <img class="popover-images" src="images/jpg/product.jpg" width="39" height="43" alt="Картинка сэлфи палка">
+                        <p class="popover-text">Любительская<br>селфи-палка</p>
+                      </div>
+                      <button class="popover-botton" type="button">
+                        <span class="visually-hidden">Удалить избранное</span>
+                      </button>
+                    </li>
+                    <li class="popover-itam">
+                      <div class="container-professional">
+                        <img class="popover-images" src="images/jpg/product-1-small.jpg" width="39" height="43" alt="Картинка сэлфи палка">
+                        <p class="popover-text">Профессиональная<br>селфи-палка</p>
+                      </div>
+                      <button class="popover-botton-product" type="button">
+                        <span class="visually-hidden">Удалить избранное</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <ul class="popover-list-text">
+                    <li class="popover-itam">
+                      <p class="popover-text">Товаров: 2</p>
+                    </li>
+                    <li class="popover-itam">
+                      <p class="popover-text">Сумма: 2000 ₽</p>
+                    </li>
+                    <li class="popover-itam-botton">
+                      <a class="popover-link" href="#">Открыть корзину</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="navigation-container-group">
+          <div class="container-group-toggler">
+            <p class="navigation-text-group-toggler">Каталог товаров</p>
+            <button class="group-toggler-button" type="button">
+              <span class="visually-hidden">Открыть каталог таваров.</span>
+              <div class="submenu-container">
+                <div class="submenu-container-list">
+                  <ul class="submenu">
+                    <li class="submenu-itam">
+                      <a class="submenu-link" href="">Виртуальная реальность</a>
+                    </li>
+                    <li class="submenu-itam">
+                      <a class="submenu-link" href="">Моноподы для cелфи</a>
+                    </li>
+                    <li class="submenu-itam">
+                      <a class="submenu-link" href="">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                  <ul class="submenu">
+                    <li class="submenu-itam">
+                      <a class="submenu-link" href="">Фитнес-браслеты</a>
+                    </li>
+                    <li class="submenu-itam">
+                      <a class="submenu-link" href="">Умные часы</a>
+                    </li>
+                  </ul>
+                  <ul class="submenu">
+                    <li class="submenu-itam">
+                      <a class="submenu-link" href="">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </button>
+          </div>
+          <ul class="navigation-list-group">
+            <li class="navigation-item-group">
+              <a class="navigation-link-group" href="#">Доставка</a>
+            </li>
+            <li class="navigation-item-group">
+              <a class="navigation-link-group" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-item-group">
+              <a class="navigation-link-group" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
       <section class="slider">
         <h1 class="visually-hidden">Главная страница электро товаров</h1>
-        <div class='slider-container'>
-          <input class="slider-radio" type="radio" name="slider1" id="slider1_1" checked="checked">
-          <label for="slider1_1"></label>
-          <div class="slider-blok">
+        <article class='slider-container'>
+          <h2 class="visually-hidden">Дрон</h2>
+          <div class="slider-arrow">
+            <button class="slider-button" type="button">
+              <img class="arrow" src="images\svg\arrow-left.svg" width="20" height="60" alt="Предыдущий слайд">
+            </button>
+            <button class="slider-button" type="button">
+              <img class="arrow" src="images/svg/arrow-right.svg" width="20" height="60" alt="Следущий слайд">
+            </button>
+            <div class="container-radio-button">
+              <button class="button-radio_1" type="button">
+                <span class="visually-hidden">Кнопка переключение слайдера</span>
+              </button>
+              <button class="button-radio" type="button">
+                <span class="visually-hidden">Кнопка переключение слайдера</span>
+              </button>
+              <button class="button-radio" type="button">
+                <span class="visually-hidden">Кнопка переключение слайдера</span>
+              </button>
+            </div>
+          </div>
+          <div class="slider-blok slider-one">
             <img alt="Самая популярная игрушка дрон" src="images/jpg/drone.png" width="560" height="560">
-            <div class="slider-arrow">
-              <label for="slider1_3">
-                <img class="arrow" src="images\svg\arrow-left.svg" width="20" height="60" alt="Предыдущий слайд">
-              </label>
-              <label for="slider1_2">
-                <img class="arrow" src="images/svg/arrow-right.svg" width="20" height="60" alt="Следущий слайд">
-              </label>
-            </div>
-            <div class="slider-text">
-              <h2 class="slider-title">Порхает как бабочка, жалит как пчела!</h2>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <button type="button">Подробнее</button>
-              <div>
-                <p>800 м</p>
-                <p>Дальность полета</p>
-              </div>
-              <div>
-                <p>50 м</p>
-                <p>Радиус поражения</p>
+            <div class="container-slider-text">
+              <strong class="slider-text-desc">Порхает как бабочка, жалит как пчела!</strong>
+              <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <a class="slider-link-button" href="#">Подробнее</a>
+              <div class="container-characteristic-desc">
+                <div class="container-characteristic">
+                  <p class="characteristic-text">800 м</p>
+                  <p class="slider-text-characteristic">Дальность полета</p>
+                </div>
+                <div class="container-characteristic">
+                  <p class="characteristic-text">50 м</p>
+                  <p class="slider-text-characteristic">Радиус поражения</p>
+                </div>
               </div>
             </div>
           </div>
-          <input class="slider-radio" type="radio" name="slider1" id="slider1_2">
-          <label for="slider1_2"></label>
-          <div class="slider-blok">
+        </article>
+        <article class='slider-container'>
+          <h2 class="visually-hidden">фитнес-браслеты</h2>
+          <div class="slider-blok slider-one">
             <img alt="фитнес-браслеты" src="images/jpg/slider-2.png" width="560" height="560">
-            <div class="slider-arrow">
-              <label class="slider-label" for="slider1_1">
-                <img class="arrow" src="images\svg\arrow-left.svg" width="20" height="60" alt="Предыдущий слайд">
-              </label>
-              <label for="slider1_3">
-                <img class="arrow" src="images/svg/arrow-right.svg" width="20" height="60" alt="Следущий слайд">
-              </label>
-            </div>
-            <div class="slider-text">
-              <h2 class="slider-title">Худеем правильно!</h2>
-              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <button type="button">Подробнее</button>
-              <div>
-                <p>48 часов</p>
-                <p>Без подзарядки</p>
+            <div class="container-slider-text">
+              <strong class="slider-text-desc">Худеем правильно!</strong>
+              <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a class="slider-link-button" href="#">Подробнее</a>
+              <div class="container-characteristic-desc">
+                <p class="characteristic-text">48 часов</p>
+                <p class="slider-text-characteristic">Без подзарядки</p>
               </div>
             </div>
           </div>
-          <input class="slider-radio" type="radio" name="slider1" id="slider1_3">
-          <label for="slider1_3"></label>
-          <div class="slider-blok">
+        </article>
+        <article class='slider-container'>
+          <h2 class="visually-hidden">палка для селфи</h2>
+          <div class="slider-blok slider-one">
             <img class="slider-images" alt="фитнес-браслеты" src="images/jpg/slider-3.png" width="560" height="560">
-            <div class="slider-arrow">
-              <label for="slider1_2">
-                <img class="arrow" src="images\svg\arrow-left.svg" width="20" height="60" alt="Предыдущий слайд">
-              </label>
-              <label for="slider1_1">
-                <img class="arrow" src="images/svg/arrow-right.svg" width="20" height="60" alt="Следущий слайд">
-              </label>
-            </div>
-            <div class="slider-text">
-              <h2 class="slider-title">Делай селфи, как Бен Стиллер!</h2>
-              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-              <button type="button">Подробнее</button>
-              <div>
-                <p>8,5 м</p>
-                <p>Длина палки</p>
-              </div>
-              <div>
-                <p>5 кг</p>
-                <p>Вес палки</p>
-              </div>
-              <div>
-                <p>Карбон</p>
-                <p>Материал</p>
+            <div class="container-slider-text">
+              <strong class="slider-text-desc">Делай селфи, как Бен Стиллер!</strong>
+              <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+              <a class="slider-link-button" href="#">Подробнее</a>
+              <div class="container-characteristic-desc">
+                <div class="container-characteristic">
+                  <p class="characteristic-text">8,5 м</p>
+                  <p class="slider-text-characteristic">Длина палки</p>
+                </div>
+                <div class="container-characteristic">
+                  <p class="characteristic-text">5 кг</p>
+                  <p class="slider-text-characteristic">Вес палки</p>
+                </div>
+                <div class="container-characteristic">
+                  <p class="characteristic-text">Карбон</p>
+                  <p class="slider-text-characteristic">Материал</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </article>
       </section>
       <section class="catalog-categories">
         <h2 class="visually-hidden">Выбор категории товаров</h2>
